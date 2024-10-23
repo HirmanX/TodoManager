@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoMnager,App", "TodoMnager,App\TodoMnager,App.csproj", "{199690BD-91DE-4EF6-AAD0-BC71D1DEA8BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoManager.DataLayer", "TodoManager.DataLayer\TodoManager.DataLayer.csproj", "{2FA229C5-7526-44A9-9E5B-5BCDAB8301A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{199690BD-91DE-4EF6-AAD0-BC71D1DEA8BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{199690BD-91DE-4EF6-AAD0-BC71D1DEA8BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{199690BD-91DE-4EF6-AAD0-BC71D1DEA8BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{199690BD-91DE-4EF6-AAD0-BC71D1DEA8BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FA229C5-7526-44A9-9E5B-5BCDAB8301A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FA229C5-7526-44A9-9E5B-5BCDAB8301A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FA229C5-7526-44A9-9E5B-5BCDAB8301A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FA229C5-7526-44A9-9E5B-5BCDAB8301A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60FD9981-7F2A-4329-B2F9-026759120A19}
+	EndGlobalSection
+EndGlobal

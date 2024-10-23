@@ -1,0 +1,6 @@
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.Utility\bin\Debug\TodoManager.Utility.dll
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.Utility\bin\Debug\TodoManager.Utility.pdb
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.Utility\obj\Debug\TodoManager.Utility.csproj.AssemblyReference.cache
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.Utility\obj\Debug\TodoManager.Utility.csproj.CoreCompileInputs.cache
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.Utility\obj\Debug\TodoManager.Utility.dll
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.Utility\obj\Debug\TodoManager.Utility.pdb

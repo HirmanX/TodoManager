@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TodoManager_dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Todos">
+    <Key>
+      <PropertyRef Name="TodoID" />
+    </Key>
+    <Property Name="TodoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nchar" MaxLength="100" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+    <Property Name="Description" Type="nchar" MaxLength="500" />
+    <Property Name="CreateDate" Type="date" Nullable="false" />
+    <Property Name="CreateBy" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nchar" MaxLength="100" Nullable="false" />
+    <Property Name="Password" Type="nchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Todos_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Todos" Type="Self.Todos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Todos">
+        <PropertyRef Name="CreateBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TodoManager_dbModelStoreContainer">
+    <EntitySet Name="Todos" EntityType="Self.Todos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Todos_Users" Association="Self.FK_Todos_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Todos" EntitySet="Todos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,12 @@
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.DataLayer\bin\Debug\TodoManager.DataLayer.dll.config
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.DataLayer\bin\Debug\TodoManager.DataLayer.dll
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.DataLayer\bin\Debug\TodoManager.DataLayer.pdb
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.DataLayer\bin\Debug\EntityFramework.dll
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.DataLayer\bin\Debug\EntityFramework.xml
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.DataLayer\obj\Debug\TodoManager.DataLayer.csproj.AssemblyReference.cache
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.DataLayer\obj\Debug\TodoManager.DataLayer.csproj.CoreCompileInputs.cache
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.DataLayer\obj\Debug\TodoMana.6C4728C4.Up2Date
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.DataLayer\obj\Debug\TodoManager.DataLayer.dll
+D:\Programming\C#\10-Project\TodoManager\NewTodoManager\TodoMnager\TodoManager.DataLayer\obj\Debug\TodoManager.DataLayer.pdb
