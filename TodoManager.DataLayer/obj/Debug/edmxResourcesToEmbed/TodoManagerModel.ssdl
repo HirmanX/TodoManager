@@ -10,6 +10,7 @@
     <Property Name="Description" Type="nchar" MaxLength="500" />
     <Property Name="CreateDate" Type="date" Nullable="false" />
     <Property Name="CreateBy" Type="int" Nullable="false" />
+    <Property Name="priority" Type="bit" />
   </EntityType>
   <EntityType Name="Users">
     <Key>

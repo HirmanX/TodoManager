@@ -11,6 +11,7 @@
     <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="CreateBy" Type="Int32" Nullable="false" />
     <NavigationProperty Name="User" Relationship="Self.FK_Todos_Users" FromRole="Todos" ToRole="Users" />
+    <Property Name="priority" Type="Boolean" />
   </EntityType>
   <EntityType Name="User">
     <Key>

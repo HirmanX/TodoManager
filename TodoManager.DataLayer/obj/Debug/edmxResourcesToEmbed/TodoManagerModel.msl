@@ -4,6 +4,7 @@
     <EntitySetMapping Name="Todos">
       <EntityTypeMapping TypeName="TodoManager_dbModel.Todo">
         <MappingFragment StoreEntitySet="Todos">
+          <ScalarProperty Name="priority" ColumnName="priority" />
           <ScalarProperty Name="TodoID" ColumnName="TodoID" />
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="Status" ColumnName="Status" />

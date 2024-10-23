@@ -20,6 +20,7 @@ namespace TodoManager.DataLayer
         public string Description { get; set; }
         public System.DateTime CreateDate { get; set; }
         public int CreateBy { get; set; }
+        public Nullable<bool> priority { get; set; }
     
         public virtual User User { get; set; }
     }

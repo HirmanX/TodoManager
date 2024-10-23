@@ -18,12 +18,15 @@ namespace TodoManager.DataLayer.Service
             this._dbSet = db.Set<TEntity>();
         }
 
-        public virtual IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> where = null)
+        public virtual IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> where = null, Expression<Func<TEntity, bool>> sort = null)
         {
             IQueryable<TEntity> query = _dbSet;
 
             if (where != null)
                 query = query.Where(where);
+
+            if(sort != null)
+                query = query.OrderBy(sort);
 
             return query.ToList();
         }

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="TodoManager_dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="TodoManager_dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Todos">
           <Key>
             <PropertyRef Name="TodoID" />
@@ -15,6 +15,7 @@
           <Property Name="Description" Type="nchar" MaxLength="500" />
           <Property Name="CreateDate" Type="date" Nullable="false" />
           <Property Name="CreateBy" Type="int" Nullable="false" />
+          <Property Name="priority" Type="bit" />
         </EntityType>
         <EntityType Name="Users">
           <Key>
@@ -44,8 +45,7 @@
             <End Role="Todos" EntitySet="Todos" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="TodoManager_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -60,6 +60,7 @@
           <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="CreateBy" Type="Int32" Nullable="false" />
           <NavigationProperty Name="User" Relationship="Self.FK_Todos_Users" FromRole="Todos" ToRole="Users" />
+          <Property Name="priority" Type="Boolean" />
         </EntityType>
         <EntityType Name="User">
           <Key>
@@ -99,6 +100,7 @@
           <EntitySetMapping Name="Todos">
             <EntityTypeMapping TypeName="TodoManager_dbModel.Todo">
               <MappingFragment StoreEntitySet="Todos">
+                <ScalarProperty Name="priority" ColumnName="priority" />
                 <ScalarProperty Name="TodoID" ColumnName="TodoID" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
